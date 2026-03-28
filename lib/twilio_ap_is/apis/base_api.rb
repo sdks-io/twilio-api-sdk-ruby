@@ -10,7 +10,7 @@ module TwilioApIs
     attr_accessor :config, :http_call_back
 
     def self.user_agent
-      'Ruby-SDK/1.0.0 (OS: {os-info}, Engine: {engine}/{engine-version})'
+      'Ruby-SDK/1.0.1 (OS: {os-info}, Engine: {engine}/{engine-version})'
     end
 
     def self.user_agent_parameters

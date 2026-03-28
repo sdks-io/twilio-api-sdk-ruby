@@ -361,6 +361,12 @@ module TwilioApIs
       @verify_v2_verification_check ||= VerifyV2VerificationCheckApi.new @global_configuration
     end
 
+    # Access to sms controller.
+    # @return [SmsApi] Returns the controller instance.
+    def sms
+      @sms ||= SmsApi.new @global_configuration
+    end
+
     def initialize(
       connection: nil, adapter: :net_http_persistent, timeout: 30,
       max_retries: 0, retry_interval: 1, backoff_factor: 2,

@@ -4,7 +4,12 @@
 # https://www.apimatic.io ).
 
 module TwilioApIs
-  # VerificationAttemptEnumMessageStatus.
+  # The status of the Message. Possible values: `accepted`, `scheduled`,
+  # `canceled`, `queued`, `sending`, `sent`, `failed`, `delivered`,
+  # `undelivered`, `receiving`, `received`, or `read` (WhatsApp only). For more
+  # information, See [detailed
+  # descriptions](https://www.twilio.com/docs/sms/api/message-resource#message-s
+  # tatus-values).
   class VerificationAttemptEnumMessageStatus
     VERIFICATION_ATTEMPT_ENUM_MESSAGE_STATUS = [
       # TODO: Write general description for QUEUED

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'twilio-api-sdk'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.summary = 'SDKs for twilio'
   s.description = 'twilio api sdk'
   s.authors = ['Muhammad Rafay']

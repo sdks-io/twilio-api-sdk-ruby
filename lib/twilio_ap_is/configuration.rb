@@ -26,7 +26,8 @@ module TwilioApIs
       DEFAULT2 = 'default2'.freeze,
       DEFAULT3 = 'default3'.freeze,
       DEFAULT4 = 'default4'.freeze,
-      DEFAULT5 = 'default5'.freeze
+      DEFAULT5 = 'default5'.freeze,
+      DEFAULT6 = 'default6'.freeze
     ].freeze
 
     # Converts a string or symbol into a valid Server constant.
@@ -41,6 +42,7 @@ module TwilioApIs
       when 'default3' then DEFAULT3
       when 'default4' then DEFAULT4
       when 'default5' then DEFAULT5
+      when 'default6' then DEFAULT6
 
       else
         warn "[Server] Unknown server '#{value}', falling back to #{default_value} "
@@ -128,7 +130,8 @@ module TwilioApIs
         Server::DEFAULT2 => 'https://conversations.twilio.com',
         Server::DEFAULT3 => 'https://notify.twilio.com',
         Server::DEFAULT4 => 'https://taskrouter.twilio.com',
-        Server::DEFAULT5 => 'https://verify.twilio.com'
+        Server::DEFAULT5 => 'https://verify.twilio.com',
+        Server::DEFAULT6 => 'https://api.twilio.com'
       }
     }.freeze
 
